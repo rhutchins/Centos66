@@ -2,7 +2,7 @@
 
 ## Needs ---
 
-VirturalBox 5.1.34.. -- Vagrant 2.1.0
+VirturalBox 5.1.34.. -- Vagrant 2.0.2
 
 Place your public key in the /provision/authorized_keys file
 
