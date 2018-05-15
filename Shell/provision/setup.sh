@@ -111,7 +111,7 @@ echo "Copy pub key to vbc6u2 .ssh directory from vagrant/provision directory"
 
 sudo su vbc6u1
 cd ~
-cp /vagrant/provision/authorized_keys /home/vbc6u1/.ssh/authorized_keys
+cp /vagrant/authorized_keys /home/vbc6u1/.ssh/authorized_keys
 sudo su vagrant
 
 echo "Finished updateing keys and files vbc6u1 .."
