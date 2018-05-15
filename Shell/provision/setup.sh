@@ -107,7 +107,7 @@ sudo chown vbc6u1:vbc6u1 /home/vbc6u1/.ssh
 sudo chown vbc6u1:vbc6u1 /home/vbc6u1/.ssh/authorized_keys
 
 echo "Done creating vbc6u1 authorized_keys file.."
-echo "Copy pub key to vbc6u2 .ssh directory from vagrant/provision directory"
+echo "Copy pub key to vbc6u2 .ssh directory from /vagrant directory"
 
 sudo su vbc6u1
 cd ~
@@ -126,11 +126,11 @@ sudo chown vbc6u2:vbc6u2 /home/vbc6u2/.ssh
 sudo chown vbc6u2:vbc6u2 /home/vbc6u2/.ssh/authorized_keys
 
 echo "Done creating vbc6u2 authorized_keys file.."
-echo "Copy pub key to vbc6u2 .ssh directory from vagrant/provision directory"
+echo "Copy pub key to vbc6u2 .ssh directory from /vagrant directory"
 
 sudo su vbc6u2
 cd ~
-cp /vagrant/provision/authorized_keys /home/vbc6u2/.ssh/authorized_keys
+cp /vagrant/authorized_keys /home/vbc6u2/.ssh/authorized_keys
 sudo su vagrant
 
 
