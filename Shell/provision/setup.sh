@@ -28,7 +28,9 @@ cd /etc/ssh/
 cp sshd_config sshd_config_bu
 cd ~
 echo "Change #PermitRootLogin Yes to PermitRootLogin No"
-echo "Later by hand and restart ssh with sudo service sshd restart"
+cp /vagrant/sshd_config_new /etc/ssh/sshd_config
+cd ~
+
 echo "Updating yum .."
 
 sudo yum update
