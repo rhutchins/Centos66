@@ -6,7 +6,7 @@
 # Version 0.1.0
 # License:
 #   Setup.sh Provision a CentOS 6.6 Q1 machnie
-#   Copyright (C) 2017  Joseph J. Simpson
+#   Copyright (C) 2017- 2018  Joseph J. Simpson
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
 #   the Free Software Foundation; either version 3 of the License, or
@@ -209,7 +209,7 @@ sudo cp /etc/resolv.conf /etc/resolv.conf_bu
 echo "Backup of /etc/resolv.conf complete"
 echo "Add a nameserver 127.0.0.1 line to the resolv.conf file."
 
-cp /vagrant/provision/resolv.conf /etc/resolv.conf
+cp /vagrant/resolv.conf /etc/resolv.conf
 
 echo "/etc/resolv.conf updated"
 echo "Restart network service when done updating "
