@@ -111,7 +111,7 @@ echo "Copy pub key to vbc6u2 .ssh directory from /vagrant directory"
 
 sudo su vbc6u1
 cd ~
-cp /vagrant/authorized_keys /home/vbc6u1/.ssh/authorized_keys
+cp /vagrant/authorized_keys_new /home/vbc6u1/.ssh/authorized_keys
 sudo su vagrant
 
 echo "Finished updateing keys and files vbc6u1 .."
@@ -130,7 +130,7 @@ echo "Copy pub key to vbc6u2 .ssh directory from /vagrant directory"
 
 sudo su vbc6u2
 cd ~
-cp /vagrant/authorized_keys /home/vbc6u2/.ssh/authorized_keys
+cp /vagrant/authorized_keys_new /home/vbc6u2/.ssh/authorized_keys
 sudo su vagrant
 
 
@@ -191,7 +191,7 @@ echo "Backup named.conf file"
 
 sudo cp /etc/named.conf /etc/named.conf_bu
 
-echo "Replace original named.conf with contents of cach_named.txt"
+echo "Replace original named.conf with contents of named.conf_new"
 
 echo "Do this one in another script"
 echo "Update named.conf and restart named"
@@ -209,7 +209,7 @@ sudo cp /etc/resolv.conf /etc/resolv.conf_bu
 echo "Backup of /etc/resolv.conf complete"
 echo "Add a nameserver 127.0.0.1 line to the resolv.conf file."
 
-cp /vagrant/resolv.conf /etc/resolv.conf
+cp /vagrant/resolv.conf_new /etc/resolv.conf
 
 echo "/etc/resolv.conf updated"
 echo "Restart network service when done updating "
