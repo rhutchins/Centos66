@@ -1,11 +1,11 @@
 // very simple DNS caching only configuration
 // used to test the vagrant <=> virtualbox provision script
 options {
-        listen-on port 53 { 127.0.0.1; 172.28.128.6; };
+        listen-on port 53 { 127.0.0.1; 192.168.57.10; };
         directory "/var/named";
         pid-file "/var/run/named/named.pid";
         //recursion yes ;
-        allow-recursion { 127.0.0.1; 172.28.128.6; };
+        allow-recursion { 127.0.0.1; 192.168.57.10; };
 /* make sure you have a named.ca file under named directory.  Review the options above
 to confirm the location of the directory
 */
